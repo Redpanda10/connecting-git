@@ -11,11 +11,8 @@
     "wdth" 100;
 }
 .navigation{
-    text-align: center;
+    text-align: left;
     display: flex;
-}
-a:hover{
-    background-color:#6B8E23;
 }
 a{
     text-decoration: none;
@@ -24,18 +21,78 @@ a{
     padding: 15px;
     margin: 15px;
 }
-.header-section{
+a:hover{
+    background-color:#6B8E23;
+}
+/* .header{
     display: flex;
+    height: max-content;
+    text-align: center;
+    border: 2px solid black;
+} */
+.about{
+    display: flex;
+    height: 100vh;
 }
 .intro{
     padding: auto;
     width: 50%;
-    height: 500px;
+    height: 400px;
     margin: 20px;
     text-align: center;
 }
 .mohit-image{
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
+    height: 350px;
+    width: 300px;
+    border-radius: 60%;
+}
+.contact{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: max-content;
+}
+input{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    
+}
+textarea{
+    width: 50%;
+    height: 20vh;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: larger;
+}
+#h1{
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+}
+#input{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+}
+#sub-btn,#contactme{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin: 20px auto;
+    background-color: #6B8E23;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#sub-btn:hover,#contactme:hover{
+    background-color: #577319;
+}
+.footer{
+    margin: 40px auto;
+    text-align: center;
+    font-size: smaller;
 }
