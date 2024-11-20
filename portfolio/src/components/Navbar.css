@@ -1,14 +1,20 @@
-.navigation{
-    text-align: left;
-    display: flex;
+.navbaritem{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    width: 100%;
 }
-a{
+#navbaritem{
+    float: left;
+    margin-left: 20px;
+    padding: 10px;
+    
+}
+#navbaritem-a{
     text-decoration: none;
-    padding: 15px;
-    border-radius: 5px;
-    padding: 15px;
-    margin-left: 15px;
-}
-a:hover{
     color:#6B8E23;
+}
+#navbaritem-a:hover{
+    color: black;
 }

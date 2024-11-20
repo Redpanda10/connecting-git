@@ -16,7 +16,7 @@ export default function App(){
   return<><div className="main">
       
       <Navbar/>
-      <Aboutpage/>
+       {/*<Aboutpage/>
 
       <div className="about">
         <div className='intro'>
@@ -70,7 +70,7 @@ export default function App(){
         https://localhost:5173 <br />
         Designed and Developed By: Mohit Singh Budal | Email: budalmohitsingh@gmail.com <br />
         &copy; Copyright 2023 Mohit Singh Budal - 2081, All Rights Reserved
-      </div>
+      </div> */}
   </div>
   </>
 }
