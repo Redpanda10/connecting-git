@@ -1,9 +1,13 @@
+.navigation{
+    height: 40px;
+}
 .navbaritem{
     list-style-type:none;
     margin: 0;
     padding: 0;
     display: inline;
     width: 100%;
+    height: 300px;
 }
 #navbaritem{
     float: left;

@@ -16,8 +16,9 @@ export default function App(){
   return<><div className="main">
       
       <Navbar/>
-       {/*<Aboutpage/>
-
+      <br />
+      <Aboutpage/>
+{/*
       <div className="about">
         <div className='intro'>
         <Typewriter

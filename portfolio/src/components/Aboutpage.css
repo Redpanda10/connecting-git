@@ -1,9 +1,25 @@
 .short-bio{
-    margin-top: 20px;
+    height: 80vh;
+    width: 100vh;
+    padding: 15px auto;
+    margin: 0 auto;
     text-align: center;
+    position: relative;
 }
-#welcome{
-    text-align: center;
-    margin-top: 20vh;
-    font-weight: 1000;
+.top{
+    margin: 20px auto;
+    padding: 10px auto;
+    width: 100vh;
+}
+.bottom{
+    position: absolute;
+    bottom: 0px;
+    width: 100vh;
+}
+#contact{
+    color: #6B8E23;
+    cursor: pointer;
+}
+#contact:hover{
+    color:#344513
 }

@@ -8,8 +8,7 @@ export default function Navbar(){
             <li id="navbaritem"><a id="navbaritem-a" href="">Projects</a></li>
             <li id="navbaritem"><a id="navbaritem-a" href="">Resume</a></li>
             <li id="navbaritem"><a id="navbaritem-a" href="">Contact me</a></li>
-            </ul>
-            
+            </ul> 
       </div>
     </>
 }

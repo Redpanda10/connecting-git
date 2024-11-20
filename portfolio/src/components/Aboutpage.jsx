@@ -4,12 +4,19 @@ export default function Aboutpage(){
         alert('Contact Form Submitted')}
     return<>
         <div className="short-bio">
-        <h1 id='welcome'>Welcome to My<div style={
-        {fontSize:100,
-        color:'#6B8E23',}
-        } >Portfolio</div></h1>
-        <p>I am a software engineer, passionate about technology and creativity.</p>
-        <button id="contactme" onClick={Contact}>Get in Touch</button>
+            <div className="top">
+                <h1 id='welcome'>Welcome to My
+                <div style={
+                {fontSize:100,
+                color:'#6B8E23',}
+                } >Portfolio</div>
+                </h1>
+            </div>
+            
+        <div className="bottom">
+                <h1>I am a software engineer, passionate about technology and creativity.</h1>
+                <p id="contact" onClick={Contact}>Contact Me</p>
+        </div>
       </div>
     </>
 }
