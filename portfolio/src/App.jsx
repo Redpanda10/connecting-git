@@ -1,79 +1,22 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css'
 import {Typewriter} from 'react-simple-typewriter';
 import Mohit from './assets/mohit singh budal.jpg';
-import ProjectCard from "./components/Projectcard.jsx";
-
-const initialProjects = [
-  {
-    title: 'To-do List',
-    description: 'This is the first project of mine that I created with the a lot of effort and this is the begininig of the projects.',
-    githubLink: 'https://github.com/redpanda10',
-  },
-  {
-    title: 'To-do List',
-    description: 'This is the first project of mine that I created with the a lot of effort and this is the begininig of the projects.',
-    githubLink: 'https://github.com/redpanda10',
-  },
-  {
-    title: 'To-do List',
-    description: 'This is the first project of mine that I created with the a lot of effort and this is the begininig of the projects.',
-    githubLink: 'https://github.com/redpanda10',
-  },
-  {
-    title: 'To-do List',
-    description: 'This is the first project of mine that I created with the a lot of effort and this is the begininig of the projects.',
-    githubLink: 'https://github.com/redpanda10',
-  },
-  {
-    title: 'To-do List',
-    description: 'This is the first project of mine that I created with the a lot of effort and this is the begininig of the projects.',
-    githubLink: 'https://github.com/redpanda10',
-  },
-  {
-    title: 'To-do List',
-    description: 'This is the first project of mine that I created with the a lot of effort and this is the begininig of the projects.',
-    githubLink: 'https://github.com/redpanda10',
-  },
-];
+import Projectcard from "./components/Projectcard.jsx";
+import Aboutpage from './components/Aboutpage.jsx';
+import Navbar from './components/Navbar.jsx';
 
 export default function App(){
 
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
 
-  const projectsToShow = showMore ? initialProjects : initialProjects.slice(0, 3);
-
-  const Contact = () => {
-    alert('Contact Form Submitted')
-  }
-  return<>
-   <div className="App">
-      <h1>My Projects</h1>
-      <div className="project-list">
-        {projectsToShow.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
-      </div>
-      {!showMore && (
-        <button className="view-more" onClick={() => setShowMore(true)}>
-          &#x2192; View More Projects
-        </button>
-      )}
-    </div>
-    <div className="main">
-      <div className="navigation">
-      <a href="">About</a>
-      <a href="">Skills</a>
-      <a href="">Projects</a>
-      <a href="">Resume</a>
-      <a href="">Contact me</a>    
-      </div>
-
-      <div className="main">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I am a software engineer, passionate about technology and creativity.</p>
-        <button id="contactme" onClick={Contact}>Get in Touch</button>
-      </div>
+  
+  
+ 
+  return<><div className="main">
+      
+      <Navbar/>
+      <Aboutpage/>
 
       <div className="about">
         <div className='intro'>
@@ -104,20 +47,8 @@ export default function App(){
           <li>Firebase</li>
         </ul>
       </div>
-      <div className="projects">
-        <h1 id="h1">Projects</h1>
-        <p id='project'>Some of my recent projects include:</p>
-        <div className='project-card' onClick='www.google.com'>
-          <header>To-do application</header>
-          <body>
-            This is the web application that I built using React and Node.js. It is a simple to-do list application that allows users to do their task in the contain time frame.
-          </body>
-          <footer>
-          Click To get Source code
-          </footer>
-        </div>
-      </div>
-
+      
+      <div>{Projectcard}</div>
 
 
       <div className="resume">click here to see resume !!!</div>

@@ -1,45 +1,17 @@
-/* src/ProjectCard.css */
-.project-card {
-    height: max-content;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    flex: 1 1 calc(33.333% - 32px); /* Three cards in a row */
-  }
+header{
+  margin: 20px auto;
+  font-size: xx-large;
+  font-weight: 700;
+  font-style: italic;
+  border-bottom:5px solid;
   
-  .project-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .project-title {
-    font-size: 1.5em;
-    margin: 0;
-  }
-  
-  .project-description {
-    margin: 10px 0;
-    color: #555;
-  }
-  
-  .project-link {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .project-card {
-      flex: 1 1 calc(100% - 32px); /* One card in a row */
-    }
-  }
-  
-  .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 -16px; /* Adjust for card margins */
-  }
+}
+body{
+  margin :40px auto;
+  font-size: larger;
+}
+footer{
+  margin: 20px auto;
+  text-align: center;
+  border-top:5px solid black ;
+}
