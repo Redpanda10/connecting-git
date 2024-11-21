@@ -1,25 +1,57 @@
-.short-bio{
-    height: 80vh;
-    width: 100vh;
-    padding: 15px auto;
+.short-bio {
+    height: 70vh;
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px;
     margin: 0 auto;
     text-align: center;
     position: relative;
 }
-.top{
+
+.top {
     margin: 20px auto;
-    padding: 10px auto;
-    width: 100vh;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
 }
-.bottom{
+
+.bottom {
     position: absolute;
     bottom: 0px;
-    width: 100vh;
+    width: 100%;
+    padding: 0 15px;
 }
-#contact{
-    color: #6B8E23;
+
+.contact-btn {
+    background-color: #6B8E23;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
 }
-#contact:hover{
-    color:#344513
+
+.contact-btn:hover {
+    background-color: #556B2F;
+    transform: translateY(-2px);
+}
+
+.contact-btn:active {
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    .short-bio {
+        height: auto;
+        min-height: 80vh;
+        padding: 10px;
+    }
+    
+    .bottom {
+        position: relative;
+        margin-top: 30px;
+    }
 }

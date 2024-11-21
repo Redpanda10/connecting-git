@@ -1,14 +1,35 @@
 import './Navbar.css'
-export default function Navbar(){
-    return <>
+import { Link, useLocation } from 'react-router-dom'
+
+export default function Navbar() {
+    const location = useLocation();
+    
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    return (
         <div className="navigation">
             <ul className="navbaritem">
-            <li id="navbaritem"><a id="navbaritem-a" href="">About</a></li>
-            <li id="navbaritem"><a id="navbaritem-a" href="">Skills</a></li>
-            <li id="navbaritem"><a id="navbaritem-a" href="">Projects</a></li>
-            <li id="navbaritem"><a id="navbaritem-a" href="">Resume</a></li>
-            <li id="navbaritem"><a id="navbaritem-a" href="">Contact me</a></li>
-            </ul> 
-      </div>
-    </>
+                <li id="navbaritem">
+                    <Link id="navbaritem-a" to="/" onClick={() => scrollToSection('about')}>About</Link>
+                </li>
+                <li id="navbaritem">
+                    <Link id="navbaritem-a" to="/" onClick={() => scrollToSection('skills')}>Skills</Link>
+                </li>
+                <li id="navbaritem">
+                    <Link id="navbaritem-a" to="/" onClick={() => scrollToSection('projects')}>Projects</Link>
+                </li>
+                <li id="navbaritem">
+                    <Link id="navbaritem-a" to="/resume">Resume</Link>
+                </li>
+                <li id="navbaritem">
+                    <Link id="navbaritem-a" to="/" onClick={() => scrollToSection('contact')}>Contact me</Link>
+                </li>
+            </ul>
+        </div>
+    );
 }

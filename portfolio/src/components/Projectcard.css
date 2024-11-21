@@ -1,17 +1,114 @@
-header{
-  margin: 20px auto;
-  font-size: xx-large;
-  font-weight: 700;
-  font-style: italic;
-  border-bottom:5px solid;
+#h1{
+  margin: 10px auto;
+  text-align: center;
+  color:#6B8E23;
+}
+#project{
+  margin: 10px auto;
+  text-align: center;
+}
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1400px;
   
 }
-body{
-  margin :40px auto;
-  font-size: larger;
+
+@media screen and (max-width: 768px) {
+  .project-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .project-card {
+    width: 100%;
+    min-height: 300px;
+    
+  }
+
+  .project-card header {
+    font-size: 1.25rem;
+  }
 }
-footer{
+
+.project-card {
+  box-shadow: 2px 2px 2px black;
+  width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #6B8E23;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: cardFadeIn 0.8s ease-out forwards;
+  backdrop-filter: blur(10px);
+}
+
+@keyframes cardFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow:0 5px 15px 5px #6B8E23;
+}
+
+.project-card header {
+  margin: 20px auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  border-bottom: 3px solid #6B8E23;
+  padding-bottom: 10px;
+  width: 90%;
+  text-align: center;
+}
+
+.project-content {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-tag {
+  background-color: #6B8E23;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.875rem;
+}
+
+.project-card footer {
   margin: 20px auto;
   text-align: center;
-  border-top:5px solid black ;
+  border-top: 3px solid #6B8E23;
+  padding-top: 10px;
+  width: 90%;
+}
+
+.project-card footer a {
+  color: #6B8E23;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card footer a:hover {
+  color: #4a6118;
 }
